@@ -1,0 +1,8 @@
+.env
+.DS_Store
+.idea/**
+node_modules/**
+public/index.html
+public/js
+public/build
+public/css/style.css

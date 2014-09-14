@@ -1,0 +1,31 @@
+{
+  "name": "credx",
+  "version": "0.0.1",
+  "description": "bargain abroad",
+  "main": "bin/server/index.js",
+  "author": "Allen Scheinhaus",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "async": "~0.8.0",
+    "sugar": "~1.4.1",
+    "moment": "2.4.0",
+    "request": "~2.34.0",
+    "express": "~3.5.1",
+    "express-validator": "2.1.0",
+    "validator": "3.5.0",
+    "bcrypt-nodejs": "*",
+    "passport": "~0.2.0",
+    "passport-local": "*",
+    "mongoose": "latest",
+    "mongoose-times": "0.1.0",
+    "mongoose-validate": "latest",
+    "connect-mongo": "~0.4.0",
+    "grunt": "latest",
+    "grunt-targethtml": "latest",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-concat": "latest",
+    "grunt-ember-handlebars": "latest",
+    "country-data": "0.0.13"
+  }
+}
