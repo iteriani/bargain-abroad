@@ -18,6 +18,7 @@
     app.get('/rest/user/activity', handlers.session.activity);
     app.get('/rest/user/logout', handlers.session.logout);
     app.get('/rest/user/auth', handlers.session.auth);
+    app.get("/rest/getSentences", handlers.sentence.findAll);  
   };
 
   exports.setup = setup;

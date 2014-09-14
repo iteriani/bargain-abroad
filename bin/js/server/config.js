@@ -8,11 +8,15 @@
 
   module.exports = {
       host: hostName,
-      port: isLocal ? localPort : process.env.PORT,
-      dbUrl: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://localhost/bargain-abroad',
+      port: localPort,
+      dbUrl: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || "mongodb://test:test@kahana.mongohq.com:10004/BargainAbroad",
       fb: {
           clientID: isLocal ? 12345 : 54321,
           clientSecret: isLocal ? 'devsecret' : 'livesecret',
           callbackURL: hostName + '/auth/facebook/callback'
+      },
+      translator : {
+        client_id : "BargainAbroad",
+        client_secret : "02R55mDBjaIaBsFdM1m5SqFR5eo8OXtdnLX/fTlKA2Y="
       }
   };

@@ -14,6 +14,10 @@
 
   handlers = require('./handlers');
 
+  msTranslator = require('mstranslator');
+
+  client = new msTranslator(config.translator, true);
+
   MongoSession = require('connect-mongo')(express);
 
   app = express();
